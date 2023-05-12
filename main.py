@@ -1,15 +1,14 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
 import psycopg2
-# postgres://wdcynmgj:uWKB7inHMuqT3Z5vgbEIrhJMfI4ukosb@mahmud.db.elephantsql.com/wdcynmgj
 
 
 # Sample connection to ElephantSQL
 conn = psycopg2.connect(
-    database="wdcynmgj",
-    user="wdcynmgj",
-    password="uWKB7inHMuqT3Z5vgbEIrhJMfI4ukosb",
-    host="mahmud.db.elephantsql.com",
+    database="DATABASE NAME HERE",
+    user="USERNAME HERE",
+    password="PASSWORD HERE",
+    host="HOSTNAME HERE",
     port="5432"
 )
 
